@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: private-reg-14
+spec:
+  containers:
+  - name: private-reg-container
+    image: hal9000:5000/my-ubuntu
+  imagePullSecrets:
+  - name: regcred
+

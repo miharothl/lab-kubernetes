@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: node-web-app-metadata
+spec:
+  containers:
+  - name: node-web-app
+    image: hal9000:5000/node-web-app
+  imagePullSecrets:
+  - name: regcred
+
